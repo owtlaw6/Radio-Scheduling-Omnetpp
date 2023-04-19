@@ -1,0 +1,144 @@
+version 2
+run Sched1-2-20230110-14:22:37-14416
+attr configname Sched1
+attr datetime 20230110-14:22:37
+attr experiment Sched1
+attr inifile omnetpp.ini
+attr iterationvars $networkLoad=0.8
+attr iterationvarsf networkLoad=0.8-
+attr measurement $networkLoad=0.8
+attr network RadioSch
+attr processid 14416
+attr repetition 2
+attr replication #2
+attr resultdir results
+attr runnumber 2
+attr seedset 2
+itervar networkLoad 0.8
+param *.usersCount 3
+param *.nrOfChannels 10
+param *.cycleDuration "1 ms"
+param *.networkLoad 0.8
+param **.user[*].generator.sendIaTime "0.2 ms"
+
+statistic RadioSch.sink "my lifetime user0"
+field count 72085
+field mean 0.032309079558854
+field stddev 0.17689935578729
+field min 0
+field max 2
+field sum 2329
+field sqrsum 2331
+attr type int
+bin	-inf	0
+bin	-1	0
+bin	0	69757
+bin	1	2327
+bin	2	1
+statistic RadioSch.sink "my lifetime user1"
+field count 39149
+field mean 3347.544432808
+field stddev 1919.0787022402
+field min 0
+field max 6641
+field sum 131053017
+field sqrsum 582882520745
+attr type int
+bin	-inf	0
+bin	-8	0
+bin	-7	0
+bin	-6	0
+bin	-5	0
+bin	-4	0
+bin	-3	0
+bin	-2	0
+bin	-1	0
+bin	0	1
+bin	1	4
+bin	2	3
+bin	3	5
+bin	4	5
+bin	5	5
+bin	6	4
+bin	7	6
+bin	8	14
+bin	9	12
+bin	10	3
+bin	11	7
+bin	12	10
+bin	13	14
+bin	14	1
+bin	15	4
+bin	16	5
+bin	17	4
+bin	18	7
+bin	19	9
+bin	20	10
+bin	21	6
+bin	22	2
+bin	23	5
+bin	24	39003
+statistic RadioSch.sink "my lifetime user2"
+field count 32766
+field mean 3914.9473844839
+field stddev 2257.4172718221
+field min 0
+field max 7773
+field sum 128277166
+field sqrsum 669166591718
+attr type int
+bin	-inf	0
+bin	-11	0
+bin	-10	0
+bin	-9	0
+bin	-8	0
+bin	-7	0
+bin	-6	0
+bin	-5	0
+bin	-4	0
+bin	-3	0
+bin	-2	0
+bin	-1	0
+bin	0	1
+bin	1	4
+bin	2	3
+bin	3	4
+bin	4	4
+bin	5	6
+bin	6	6
+bin	7	6
+bin	8	10
+bin	9	7
+bin	10	5
+bin	11	3
+bin	12	8
+bin	13	6
+bin	14	7
+bin	15	1
+bin	16	3
+bin	17	3
+bin	18	3
+bin	19	2
+bin	20	1
+bin	21	5
+bin	22	3
+bin	23	2
+bin	24	4
+bin	25	4
+bin	26	3
+bin	27	3
+bin	28	1
+bin	29	2
+bin	30	4
+bin	31	1
+bin	32	3
+bin	33	32638
+scalar RadioSch.sink lifetime:mean 1801.4187996507
+attr interpolationmode none
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar RadioSch.sink lifetime:max 7773.8282221112
+attr interpolationmode none
+attr title "lifetime of arrived jobs, max"
+attr unit s
+

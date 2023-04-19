@@ -1,0 +1,71 @@
+version 2
+run Sched1-5-20221222-08:48:17-5060
+attr configname Sched1
+attr datetime 20221222-08:48:17
+attr experiment Sched1
+attr inifile omnetpp.ini
+attr iterationvars $networkLoad=1
+attr iterationvarsf networkLoad=1-
+attr measurement $networkLoad=1
+attr network RadioSch
+attr processid 5060
+attr repetition 5
+attr replication #5
+attr resultdir results
+attr runnumber 5
+attr seedset 5
+itervar networkLoad 1
+param *.usersCount 3
+param *.nrOfChannels 10
+param *.cycleDuration "1 ms"
+param *.networkLoad 1
+param **.user[*].generator.sendIaTime "0.2 ms"
+
+statistic RadioSch.sink "my lifetime user0"
+field count 0
+field mean nan
+field stddev nan
+field min nan
+field max nan
+field sum 0
+field sqrsum 0
+attr type int
+bin	-inf	0
+bin	-1	0
+bin	0	0
+bin	1	0
+statistic RadioSch.sink "my lifetime user1"
+field count 0
+field mean nan
+field stddev nan
+field min nan
+field max nan
+field sum 0
+field sqrsum 0
+attr type int
+bin	-inf	0
+bin	-1	0
+bin	0	0
+bin	1	0
+statistic RadioSch.sink "my lifetime user2"
+field count 0
+field mean nan
+field stddev nan
+field min nan
+field max nan
+field sum 0
+field sqrsum 0
+attr type int
+bin	-inf	0
+bin	-1	0
+bin	0	0
+bin	1	0
+scalar RadioSch.sink lifetime:mean nan
+attr interpolationmode none
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar RadioSch.sink lifetime:max nan
+attr interpolationmode none
+attr title "lifetime of arrived jobs, max"
+attr unit s
+
